@@ -23,8 +23,8 @@ void setup(){
     }
 }
 
-void loop(){
-
+void loop()
+{
 }
 
 float range(){
