@@ -7,8 +7,8 @@ Author: Nontakorn Bunluesriruang
 #include "SoftPWM.h"
 #include <Wire.h>
 
-// MY_I2C_ADDRESS = 0x53
-int slave_address = 0x53;
+// MY_I2C_ADDRESS = 0x42
+int slave_address = 0x42;
 
 // please define Motors pwm pins
 #define upRi_r 5

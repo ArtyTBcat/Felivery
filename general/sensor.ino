@@ -12,6 +12,7 @@ Author: Nontakorn Bunluesriruang
 #define trig_l 7
 #define echo_l 8
 
+int slave_address = 0x53;
 int inputPins[3] = {echo_r, echo_c, echo_l};
 int outputPins[3] = {trig_r, trig_c, trig_l};
 

@@ -16,11 +16,13 @@ class driver:  # Control Motor
         command = [driver.PROTOCOL[colNum], motor]
         i2c.send(str(command), driver.ADDRESS)
 
-    def getData():
-        pass
-
-
 class dataModule:  # Sensors Data
-    # data format
-    # [[latitude, longitude], [rangeSensor, rangeSensor, rangeSensor]]
-    pass
+    ADDRESS = 0x53
+    # data format : [[latitude, longitude], [rangeSensor, rangeSensor, rangeSensor]]
+    
+    def reciveData():
+        amountBytes = int(i2c.recv(2)) # get amount bytes        
+        data = bytearray(amountBytes)  # create a buffer
+        i2c.recv(data)
+        return data
+
