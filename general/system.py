@@ -1,5 +1,6 @@
 # !/bin/bash
-# Copyright 2022 Google LLC
+# MIT License
+# Copyright (c) 2022 ArtyTBcat
 # Author: Nontakorn Bunluesriruang
 
 from matplotlib import pyplot as plt

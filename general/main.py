@@ -1,5 +1,6 @@
-# coded by: nontakorn
-# project: deliveryBot
+# MIT License
+# Copyright (c) 2022 ArtyTBcat
+# Author: Nontakorn Bunluesriruang
 
 from pyb import I2C
 

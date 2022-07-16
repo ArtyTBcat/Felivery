@@ -1,5 +1,8 @@
-// coded by == Nontakorn
-// project-- deliveryBot
+/*
+MIT License
+Copyright (c) 2022 ArtyTBcat
+Author: Nontakorn Bunluesriruang
+*/
 
 #include "SoftPWM.h"
 #include <Wire.h>
