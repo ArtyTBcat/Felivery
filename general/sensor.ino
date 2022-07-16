@@ -12,14 +12,38 @@ Author: Nontakorn Bunluesriruang
 #define trig_l 7
 #define echo_l 8
 
-void setup(){
-    int inputPins[3] = {echo_r, echo_c, echo_l};
-    int outputPins[3] = {trig_r, trig_c, trig_l};
-    for {x,}
+int inputPins[3] = {echo_r, echo_c, echo_l};
+int outputPins[3] = {trig_r, trig_c, trig_l};
 
+void setup(){    
+    for (int i = 0; i <= 3; i++) {
+        pinMode(inputPins[i], INPUT);
+        pinMode(outputPins[i], OUTPUT);
+    }
 }
 
 void loop(){
 
 }
 
+float range(){
+    //send pulse
+    for (int i = 0; i<= 3; i++){
+        digitalWrite(outputPins[i], HIGH);
+    }
+    delayMicroseconds(10);
+    for (int i = 0; i<= 3; i++){
+        digitalWrite(outputPins[i], LOW);
+    }
+    // end sending pulse
+
+    // find distance between pulse
+    float rangeCM[];
+    for (int i = 0; i<= 3; i++){
+        duration = pulseIn(echoPin[i], HIGH);
+        distance = duration * 0.034 / 2;
+        rangeCM[i] = distance;
+    }
+    // end find
+    return rangeCM;
+}
