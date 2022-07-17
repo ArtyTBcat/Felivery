@@ -21,8 +21,8 @@ class dataModule:  # Sensors Data
     # data format : [[latitude, longitude], [rangeSensor, rangeSensor, rangeSensor]]
     
     def reciveData():
-        amountBytes = int(i2c.recv(2)) # get amount bytes        
+        amountBytes = int(i2c.recv(2)) # get amount bytes
         data = bytearray(amountBytes)  # create a buffer
         i2c.recv(data)
-        return data
+        return list(data)
 
