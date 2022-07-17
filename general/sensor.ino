@@ -25,7 +25,8 @@ TinyGPSPlus gps;
 SoftwareSerial ss(gpsRX, gpsTX);
 
 void setup(){
-    ss.begin(GPSBaud);
+    ss.begin(20000);
+    Serial.begin(20000);
     for (int i = 0; i <= 3; i++) {
         pinMode(inputPins[i], INPUT);
         pinMode(outputPins[i], OUTPUT);
@@ -35,24 +36,7 @@ void setup(){
 void loop()
 {
     while (ss.available() > 0) {
-        gps.encode(ss.read());
-        if (gps.location.isUpdated()) {
-            // Latitude in degrees (double)
-            Serial.print("Latitude= ");
-            Serial.print(gps.location.lat(), 6);
-            // Longitude in degrees (double)
-            Serial.print(" Longitude= ");
-            Serial.println(gps.location.lng(), 6);
-            // speed km/hr
-            Serial.print("Speed in km/h = ");
-            Serial.println(gps.speed.kmph());
-            // Course in degrees (double)
-            Serial.print("Course in degrees = ");
-            Serial.println(gps.course.deg());
-            // Altitude in meters (double)
-            Serial.print("Altitude in meters = ");
-            Serial.println(gps.altitude.meters());
-        }
+        GPSdata();       
     }
 }
 
@@ -76,4 +60,26 @@ float range(){
     }
     // end find
     return rangeCM;
+}
+
+void GPSdata()
+{
+gps.encode(ss.read());
+    if (gps.location.isUpdated()) {
+        // Latitude in degrees (double)
+        Serial.print("Latitude= ");
+        Serial.print(gps.location.lat(), 6);
+        // Longitude in degrees (double)
+        Serial.print(" Longitude= ");
+        Serial.println(gps.location.lng(), 6);
+        // speed km/hr
+        Serial.print("Speed in km/h = ");
+        Serial.println(gps.speed.kmph());
+        // Course in degrees (double)
+        Serial.print("Course in degrees = ");
+        Serial.println(gps.course.deg());
+        // Altitude in meters (double)
+        Serial.print("Altitude in meters = ");
+        Serial.println(gps.altitude.meters());
+    }    
 }
