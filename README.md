@@ -8,4 +8,4 @@ Delivery Robot is an autonomous mobile robot developed by a small high-school st
 * Can be programmed to follow a specific route * Can be used as a mobile office * Can be used for deliveries of lage cargo items such as boxes, cargo, groceries, etc.
 
 
-![messageImage_1657813141591](https://user-images.githubusercontent.com/77570219/179021767-2c683932-f63d-4479-bc12-fe4d060e9cf4.jpg)
+![image](https://user-images.githubusercontent.com/77570219/187121507-fce6effe-50a1-4706-a32b-2f54eef22ba3.jpeg)
