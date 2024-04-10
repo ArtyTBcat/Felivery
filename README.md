@@ -25,8 +25,4 @@ The circuit board of the Delivery robot is an integral part of its design and fu
 <br><br>
 In addition, the circuit board is able to connect to a 16-bit camera, which provides the robot with the ability to capture and process high-quality images and video. This can be useful for a variety of applications, such as navigation, object recognition, and environmental sensing. The circuit board's ability to connect to this camera and other sensors and peripherals allows the Delivery robot to gather and process data from its surroundings, enabling it to make decisions and navigate its environment with a high degree of accuracy and reliability. Overall, the circuit board of the Delivery robot plays a crucial role in enabling the robot to function effectively and perform a wide range of tasks.
 
-<br><br>
-# Images of previous Designs <br>
 
-![image](https://user-images.githubusercontent.com/77570219/187121601-fa454c2f-3aed-40e9-ac8d-e16131c3e07f.jpeg)
-![image](https://user-images.githubusercontent.com/77570219/187121700-4cf0e204-2f5a-4898-8295-92259ae5c4a6.jpeg)
