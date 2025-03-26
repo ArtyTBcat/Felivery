@@ -1,4 +1,4 @@
-# deliveryBot: ตี้ตี้(Ti-Ti)
+# ตี้ตี้ (Ti-Ti)
 
 ตี้ตี้(Ti-Ti) or Ti is an automated delivery system developed by a small high-school team that can deliver packages anywhere in the world within 24 hours! The Delivery Robot is equipped with a high quality camera and GPS tracking device that allows it to navigate its way through any obstacle or terrain.
 
